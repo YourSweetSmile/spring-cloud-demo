@@ -21,6 +21,7 @@ import com.netflix.loadbalancer.RetryRule;
 public class ConfigBean {
 
 	@Bean
+	@LoadBalanced  //客户端ribbon负载均衡
 	public RestTemplate getRestTemplate()
 	{
 		return new RestTemplate();
